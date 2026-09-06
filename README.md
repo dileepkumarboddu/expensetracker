@@ -842,4 +842,17 @@ npm run dev
 http://localhost:5173
 ```
 
+---
+
+## 🚀 Cloud Deployment
+
+Ready to take this project live? See the comprehensive step-by-step guide:
+👉 **[Complete Cloud Deployment Guide](DEPLOYMENT_GUIDE.md)**
+
+- **Database**: MongoDB Atlas (Free M0 Cluster)
+- **Backend API**: Render Web Service (Spring Boot 3 / Docker)
+- **Frontend UI**: Vercel / Netlify (React 18 + Vite)
+
+---
+
 **Personal Expense Tracker — React + Spring Boot + MongoDB**

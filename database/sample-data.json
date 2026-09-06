@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Monthly Salary",
+    "amount": 65000,
+    "type": "INCOME",
+    "category": "Salary",
+    "transactionDate": "2026-09-01",
+    "description": "Monthly software engineer salary"
+  },
+  {
+    "title": "Apartment Rent",
+    "amount": 18000,
+    "type": "EXPENSE",
+    "category": "Rent",
+    "transactionDate": "2026-09-02",
+    "description": "Monthly house rent"
+  },
+  {
+    "title": "Supermarket Groceries",
+    "amount": 4250,
+    "type": "EXPENSE",
+    "category": "Groceries",
+    "transactionDate": "2026-09-03",
+    "description": "Monthly groceries and staples"
+  },
+  {
+    "title": "Freelance UI Design",
+    "amount": 15000,
+    "type": "INCOME",
+    "category": "Freelancing",
+    "transactionDate": "2026-09-04",
+    "description": "Mobile app UI redesign client project"
+  },
+  {
+    "title": "Electricity and Water Bill",
+    "amount": 2100,
+    "type": "EXPENSE",
+    "category": "Bills",
+    "transactionDate": "2026-09-05",
+    "description": "Utility bill payments"
+  },
+  {
+    "title": "Weekend Dinner with Friends",
+    "amount": 1850,
+    "type": "EXPENSE",
+    "category": "Food",
+    "transactionDate": "2026-09-06",
+    "description": "Dinner at Italian restaurant"
+  },
+  {
+    "title": "Stock Dividend",
+    "amount": 3400,
+    "type": "INCOME",
+    "category": "Investment",
+    "transactionDate": "2026-09-07",
+    "description": "Quarterly dividend payout"
+  },
+  {
+    "title": "Vehicle Petrol",
+    "amount": 2000,
+    "type": "EXPENSE",
+    "category": "Travel",
+    "transactionDate": "2026-09-08",
+    "description": "Fuel refill"
+  },
+  {
+    "title": "Online Course Subscription",
+    "amount": 1299,
+    "type": "EXPENSE",
+    "category": "Education",
+    "transactionDate": "2026-09-09",
+    "description": "Full stack development masterclass"
+  },
+  {
+    "title": "Doctor Consultation & Pharmacy",
+    "amount": 1500,
+    "type": "EXPENSE",
+    "category": "Health",
+    "transactionDate": "2026-09-10",
+    "description": "Routine health checkup"
+  },
+  {
+    "title": "Movie Tickets & Snacks",
+    "amount": 800,
+    "type": "EXPENSE",
+    "category": "Entertainment",
+    "transactionDate": "2026-09-11",
+    "description": "Weekend movie outing"
+  },
+  {
+    "title": "New Running Shoes",
+    "amount": 3499,
+    "type": "EXPENSE",
+    "category": "Shopping",
+    "transactionDate": "2026-09-12",
+    "description": "Sports gear purchase"
+  }
+]

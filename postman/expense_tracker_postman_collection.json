@@ -1,0 +1,311 @@
+{
+  "info": {
+    "name": "Personal Expense Tracker API",
+    "description": "Complete Postman collection for testing the Spring Boot + MongoDB Expense Tracker REST APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1. Get All Transactions",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/transactions",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions"
+          ]
+        }
+      }
+    },
+    {
+      "name": "2. Get Transaction By ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/transactions/REPLACE_WITH_ID",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions",
+            "REPLACE_WITH_ID"
+          ]
+        }
+      }
+    },
+    {
+      "name": "3. Create Transaction (Expense)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Restaurant Dinner\",\n  \"amount\": 750,\n  \"type\": \"EXPENSE\",\n  \"category\": \"Food\",\n  \"transactionDate\": \"2026-09-05\",\n  \"description\": \"Family dinner\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/transactions",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions"
+          ]
+        }
+      }
+    },
+    {
+      "name": "4. Create Transaction (Income)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Freelance Web Project\",\n  \"amount\": 25000,\n  \"type\": \"INCOME\",\n  \"category\": \"Freelancing\",\n  \"transactionDate\": \"2026-09-05\",\n  \"description\": \"React & Spring Boot development\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/transactions",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions"
+          ]
+        }
+      }
+    },
+    {
+      "name": "5. Update Transaction",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Fine Dining Restaurant\",\n  \"amount\": 950,\n  \"type\": \"EXPENSE\",\n  \"category\": \"Food\",\n  \"transactionDate\": \"2026-09-05\",\n  \"description\": \"Updated dinner bill\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/transactions/REPLACE_WITH_ID",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions",
+            "REPLACE_WITH_ID"
+          ]
+        }
+      }
+    },
+    {
+      "name": "6. Delete Transaction",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/transactions/REPLACE_WITH_ID",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions",
+            "REPLACE_WITH_ID"
+          ]
+        }
+      }
+    },
+    {
+      "name": "7. Search Transactions by Title",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/transactions/search?title=salary",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "title",
+              "value": "salary"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "8. Filter Transactions by Type & Category",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/transactions/filter?type=EXPENSE&category=Food",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions",
+            "filter"
+          ],
+          "query": [
+            {
+              "key": "type",
+              "value": "EXPENSE"
+            },
+            {
+              "key": "category",
+              "value": "Food"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "9. Filter Transactions by Date Range",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/transactions/filter?fromDate=2026-09-01&toDate=2026-09-30",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions",
+            "filter"
+          ],
+          "query": [
+            {
+              "key": "fromDate",
+              "value": "2026-09-01"
+            },
+            {
+              "key": "toDate",
+              "value": "2026-09-30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "10. Get Financial Summary",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/transactions/summary",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions",
+            "summary"
+          ]
+        }
+      }
+    },
+    {
+      "name": "11. Get Category Summary",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/transactions/summary/categories",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions",
+            "summary",
+            "categories"
+          ]
+        }
+      }
+    },
+    {
+      "name": "12. Get Monthly Summary",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/transactions/summary/monthly?year=2026&month=9",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions",
+            "summary",
+            "monthly"
+          ],
+          "query": [
+            {
+              "key": "year",
+              "value": "2026"
+            },
+            {
+              "key": "month",
+              "value": "9"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

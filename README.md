@@ -142,15 +142,6 @@ MongoDB stores transactions as documents in the `transactions` collection inside
 - **Postman** — REST API testing
 - **Git / GitHub** — Version control
 
-### Not Used
-
-This project intentionally does **not** use:
-
-- MySQL
-- JPA
-- Hibernate
-- Maven
-- Lombok
 
 MongoDB is accessed through **Spring Data MongoDB**.
 

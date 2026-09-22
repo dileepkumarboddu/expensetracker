@@ -30,7 +30,7 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
       args:
-        - VITE_API_URL=/api
+        - VITE_API_URL=https://expensetracker-1-jpfl.onrender.com/api
     container_name: expense-tracker-frontend
     restart: always
     depends_on:
